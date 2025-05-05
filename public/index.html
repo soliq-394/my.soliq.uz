@@ -1,42 +1,11 @@
 <!DOCTYPE html>
 <html lang="uz">
-<head>
-  <meta charset="UTF-8">
-  <title>Файлни юклаб олиш</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-      padding-top: 100px;
-    }
-    h1 {
-      margin-bottom: 30px;
-    }
-    a.download-btn {
-      display: inline-block;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Файл юкланмоқда...</h1>
-
-  <script>
-    // Fayl yo‘li shu yerda ko‘rsatiladi
-    window.onload = function() {
-      const link = document.createElement("a");
-      link.href = "Хисоб_фактура_акциз_804_27....pdf"; // Fayl nomi va kengaytmasi to‘liq yozilishi kerak
-      link.download = ""; // Foydalanuvchi faylni avtomatik yuklaydi
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Файл юкланмоқда...</title>
+    <meta http-equiv="refresh" content="0; url=Хисоб_фактура_акциз_804_27.xlsx">
+  </head>
+  <body>
+    <p>Файл юкланмоқда, агар автоматик юкланмаса, <a href="Хисоб_фактура_акциз_804_27.xlsx">бу ерни босинг</a>.</p>
+  </body>
 </html>

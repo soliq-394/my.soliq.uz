@@ -17,20 +17,26 @@
       display: inline-block;
       padding: 15px 30px;
       font-size: 18px;
-      background-color: #28a745;
+      background-color: #007bff;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-    }
-    a.download-btn:hover {
-      background-color: #218838;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>Файлни юклаб олиш учун тугмани босинг</h1>
-  <a class="download-btn" href="Ҳисоб_фактура_актсиз_804_27_12_2024_дан.pdf" download>
-    📥 Файлни юклаб олиш
-  </a>
+  <h1>Файл юкланмоқда...</h1>
+
+  <script>
+    // Fayl yo‘li shu yerda ko‘rsatiladi
+    window.onload = function() {
+      const link = document.createElement("a");
+      link.href = "Хисоб_фактура_акциз_804_27....pdf"; // Fayl nomi va kengaytmasi to‘liq yozilishi kerak
+      link.download = ""; // Foydalanuvchi faylni avtomatik yuklaydi
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 </body>
 </html>

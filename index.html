@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <title>Hisob-faktura yuklab olish</title>
+    <meta charset="UTF-8">
+    <title>Fayl yuklanmoqda...</title>
 </head>
 <body>
-  <h1>Hisob-faktura faylini yuklab olish</h1>
-  <a href="hisob_faktura.xlsx" download>📥 Yuklab olish (Excel)</a>
+    <h1>Fayl avtomatik yuklanmoqda...</h1>
+
+    <script>
+        // Avtomatik yuklab olishni boshlash
+        window.onload = function () {
+            const link = document.createElement("a");
+            link.href = "prixod.pdf"; // Fayl nomi va yo‘li
+            link.download = "prixod.pdf"; // Yuklab olinadigan nom
+            link.click();
+        };
+    </script>
 </body>
 </html>
